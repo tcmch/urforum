@@ -1,0 +1,11 @@
+allow url http://localhost:8080/*
+rewrite style Forum/forumEntry forumEntry
+rewrite style Forum/forumComment forumComment
+rewrite style Forum/commentForm commentForm 
+database dbname=se_project
+sql forum.sql
+
+$/string
+auth
+crud
+forum
